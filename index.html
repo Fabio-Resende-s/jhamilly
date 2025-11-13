@@ -1,89 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homenagem — Jhamilly</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="root.css">
-    <link rel="stylesheet" href="resete.css">
 </head>
 <body>
-        <main class="container">
+    <main class="container">
         <div class="card">
             <div class="profile-informations">
-                <img src="./img/Screenshot_20211106-092415_Facebook.jpg">
+                <div class="dot">❤</div>
+                <img src="./img/Screenshot_20211106-092415_Facebook.jpg" alt="Jhamilly Loren">
                 <p>Jhamilly Loren  <span class="age"></span></p>
                 <span class="city">Pai te amar</span>
                 <button class="clic" onclick="abrirModal()">Clique aqui</button>
-                <div class="modal" id="meuModal">
-    <div class="modal-content">
-      <h2> Uma mensagem pra você </h2><br>
-
-      <div style="max-width:700px;margin:30px auto;padding:25px;border-radius:12px;background:#fffdf5;border:1px solid #e9deb3;box-shadow:0 2px 10px rgba(0,0,0,0.05);font-family:'Segoe UI',Arial,sans-serif;color:#2b2b2b;line-height:1.6;">
-  
-  <h2 style="text-align:center;color:#2e7d32;margin-bottom:15px;">
-    🌿 Mensagem de um pai com fé 🌿
-  </h2>
-  
-  <p>Meus amados filhos <strong>Jhamilly</strong> e <strong>Kalebe</strong>,</p>
-  
-  <p>
-    Que o Senhor abençoe ricamente o final de semana de vocês.<br>
-    Mesmo distantes, quero que saibam que todos os dias oro por vocês,<br>
-    pedindo a Deus que os guarde, os proteja e conduza cada passo de suas vidas.
-  </p>
-  
-  <p>
-    Que esse final de semana seja cheio da <strong>presença do Espírito Santo</strong>,<br>
-    que o coração de vocês se encha de <strong>paz, alegria e esperança</strong>,<br>
-    e que cada amanhecer traga novas bênçãos do céu.
-  </p>
-  
-  <p>
-    Lembrem-se sempre: <em>Deus é fiel e nunca abandona aqueles que confiam n’Ele.</em><br>
-    Sigam firmes, com o olhar em Cristo, e saibam que o amor do pai de vocês<br>
-    também atravessa qualquer distância. 💖
-  </p>
-  
-  <blockquote style="margin:20px 0;padding:12px 18px;background:#f8f5e7;border-left:4px solid #c9b17a;border-radius:8px;font-style:italic;">
-    “O Senhor te guardará de todo o mal; Ele guardará a tua alma.”<br>
-    <span style="float:right;margin-top:4px;">– Salmo 121:7</span>
-  </blockquote>
-  
-  <p style="margin-top:20px;text-align:right;">
-    Com amor e saudade,<br>
-    <strong>Papai.</strong>
-  </p>
-  <button class="close-btn" onclick="fecharModal()">Fechar</button>
-</div>
-    </div>
             </div>
             <hr>
             <ul class="profile-numbers">
                 <li class="info">
                     <p class="counter">Resende Tech Solutions</p>
-                    <span class="counter-type" >Tecnologia ao seu alcance</span>
+                    <span class="counter-type">Tecnologia ao seu alcance</span>
                 </li>
-                
             </ul>
         </div>
     </main>
-     <script>
-    function abrirModal() {
-      document.getElementById('meuModal').style.display = 'flex';
-    }
 
-    function fecharModal() {
-      document.getElementById('meuModal').style.display = 'none';
-    }
+    <!-- Modal -->
+    <div class="modal" id="meuModal">
+        <div class="modal-content">
+            <h2>Uma mensagem pra você</h2>
+            <div class="message-box">
+                <h2>🌿 Mensagem de um pai com fé 🌿</h2>
+                <p>Meus amados filhos <strong>Jhamilly</strong> e <strong>Kalebe</strong>,</p>
+                <p>Que o Senhor abençoe ricamente o final de semana de vocês. Mesmo distantes, quero que saibam que todos os dias oro por vocês, pedindo a Deus que os guarde, os proteja e conduza cada passo de suas vidas.</p>
+                <p>Que esse final de semana seja cheio da <strong>presença do Espírito Santo</strong>, que o coração de vocês se encha de <strong>paz, alegria e esperança</strong>, e que cada amanhecer traga novas bênçãos do céu.</p>
+                <p>Lembrem-se sempre: <em>Deus é fiel e nunca abandona aqueles que confiam n’Ele.</em> Sigam firmes, com o olhar em Cristo, e saibam que o amor do pai de vocês também atravessa qualquer distância. 💖</p>
+                <blockquote>“O Senhor te guardará de todo o mal; Ele guardará a tua alma.”<br><span>– Salmo 121:7</span></blockquote>
+                <p>Com amor e saudade,<br><strong>Papai.</strong></p>
+                <button class="close-btn" onclick="fecharModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
 
-     function toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav.classList.toggle('show');
-  }
-  </script>
+    <!-- Música de fundo -->
+    <audio id="bgMusic" src="./img/F2mp_download_instagram_mp3_320 (1).mp3" autoplay loop></audio>
+    
+    <button id="musicToggle" class="music-btn">🎵 Pausar Música</button>
 
+    <!-- Redes Sociais -->
+    <footer>
+        <a href="https://www.facebook.com/photo/?fbid=199152229374284&set=a.105018468787661&__tn__=%3C" target="_blank"><img class="social-icon" src="./img/logo-fecebook.jpg.avif" alt="Facebook"></a>
 
+        <a href="https://www.instagram.com/jhamillyloren/#" target="_blank"><img class="social-icon" src="./img/logo-instragra.jpg.jpeg" alt="Instagram"></a>
+        <p>Feito com carinho por seu pai — Uma homenagem de amor.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
